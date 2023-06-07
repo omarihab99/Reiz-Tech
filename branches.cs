@@ -43,7 +43,16 @@ namespace branches
             branch5.branches.Add(branch8);
             branch5.branches.Add(branch9);
             branch8.branches.Add(branch10);
-            Console.WriteLine(CalculateDepth(root));
+//                       root
+//                    /         \
+//                  B1           B2
+//                 /         /    |   \ 
+//              B3          B4    B5    B6
+//                         /     /  \
+//                        B7    B8   B9
+//                              |
+//                              B10  
+            Console.WriteLine(CalculateDepth(root)); 
         }
     }
 }
